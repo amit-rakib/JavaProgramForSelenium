@@ -5,33 +5,41 @@ public class AddTwoMatrix {
 		// TODO Auto-generated method stub
 		
 		
-		int m, n, c, d;
 		
 		int first[][] = { { 1, 2 }, { 5, 10 }, { 2, 6 } };
 		int second[][] = { { 2, 6 }, { 1, 2 }, { 5, 3} };
 		
-		m = first.length;
-		n = first[0].length;
+		// Firstly we need to find out how many lines in first matrix 
+		// for 1st for loop 3 lines 
 		
-		int sum[][] = new int [m][n];
+		int m = first.length;
 		
-		System.out.println(m);
-		System.out.println(n);
+		// Secondly we need in each line how many values
+		// for 2nd for loop 2 values
+		int n = first[0].length;
 		
-		for (c = 0; c< m; c++) {
-			for (d = 0; d< n; d++) {
-				
-				sum[c][d] = first[c][d] + second[c][d];
+		// Now we need to create memory for the new matrix 
+		int sum[][] = new int[m][n];
+		
+		
+		// Two for loop for i, j
+		// for adding two matrix
+		for (int i=0; i<m; i++) {
+			for (int j=0; j<n; j++) {
+				sum[i][j] = first[i][j] + second[i][j];
 			}
 		}
 		
+		// for printing two matrix
+		// need two for loop i, j too
 		
-		 for(c=0; c<m; c++) {
-			 for(d=0; d<n; d++) {
-				 System.out.print(sum[c][d] + "\t");
-			 }
-			 System.out.println();
-		 }
+		for (int i=0; i<m; i++) {
+			for (int j =0; j<n; j++) {
+				System.out.print(sum[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
 		
 
 	}
