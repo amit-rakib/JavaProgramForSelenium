@@ -18,7 +18,7 @@ public class PalindromeNumber {
 		
 			int digit =	num % 10;
 		    reversed = reversed*10+digit;
-		    
+		   
 		    num = num/10;
 		 
 		}
