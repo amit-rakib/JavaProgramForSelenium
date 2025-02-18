@@ -7,7 +7,7 @@ public class SearchAnElementInArray {
 		
 		int array[] = { 20, 30, 40, 50, 60};
 		
-		int search = 500;
+		int search = 50;
 		
 		boolean flag = false;
 		
