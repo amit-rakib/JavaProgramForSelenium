@@ -8,7 +8,7 @@ public class GenerateRandomNumber {
           
 		
 		
-		// First Way
+		// First Way using Random class
 		Random random = new Random();
 		
 		for(int i =0; i<5; i++) {
@@ -17,7 +17,7 @@ public class GenerateRandomNumber {
 		
 		
 		
-		// Second Way
+		// Second Way using Math Random
 		for(int i=0; i<5; i++) {
 			System.out.println( (int) (Math.random()*50));
 		}
