@@ -7,7 +7,18 @@ public class AllprogramPractice {
 		reverseString();
 		
 		primeNumber();
+		
+		
+		
+		int n = 5;
+        System.out.println("Factorial of " + n + " is: " + factorial(n));
 
+
+	}
+
+	private static int factorial(int n) {
+		 if (n == 0 || n == 1) return 1;
+	        return n * factorial(n - 1);
 	}
 
 	private static void primeNumber() {
